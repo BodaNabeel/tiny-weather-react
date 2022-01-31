@@ -12,7 +12,7 @@ function App() {
       <InputField location={location} setLocation={setLocation} />
     </> 
 
-    if
+    if{}
   );   
 }
 

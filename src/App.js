@@ -11,8 +11,6 @@ function App() {
       <Header location={location} />
       <InputField location={location} setLocation={setLocation} />
     </> 
-
-    if{}
   );   
 }
 

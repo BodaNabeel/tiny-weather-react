@@ -10,7 +10,7 @@ function App() {
       <WebFontLoader />
       <Header location={location} />
       <InputField location={location} setLocation={setLocation} />
-    </>
+    </> 
   );   
 }
 

@@ -8,18 +8,11 @@ function InputField({ location, setLocation, setWeather }) {
 
       fetch(url)
         .then((res) => res.json())
-        .then((data) => setWeather(data));
+        .then((data) => setWeather(data))
+        // .then((data) => console.log(data))
     }
   },[location]);
 
-  // const fetchAPI = (location) => {
-  // const API_KEY = `ab00324bf4bc45a786780155223101`;
-  // const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
-
-  // fetch(url)
-  //   .then((res) => res.json())
-  // .then((data) => console.log(data));
-  // };
 
   const input = useRef();
   useEffect(() => {

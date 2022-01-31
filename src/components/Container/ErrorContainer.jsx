@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ErrorContainer() {
+function ErrorContainer({weather}) {
   return <div>hi</div>;
 }
 

@@ -1,7 +1,9 @@
 import WebFontLoader from "./components/hooks/WebFontLoader";
 import Header from "./components/Header";
 import InputField from "./components/InputField";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import DefaultContainer from "./components/Container/DefaultContainer";
+import MainContainer from "./components/Container/MainContainer";
 
 function App() {
   const [location, setLocation] = useState("");
@@ -26,7 +28,7 @@ function App() {
         // fetchAPI={fetchAPI}
         setWeather={setWeather}
       />
-      <p>{weather.location? weather.location.name : "error"}</p>
+      {weather?<MainContainer weather={weather}/>: <DefaultContainer/>}
     </>
   );
 }

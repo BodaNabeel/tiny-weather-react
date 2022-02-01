@@ -26,6 +26,14 @@ header {
   margin: 0.5rem 0 0 1.5rem;
   font-size: 2rem;
 }
+.default-text {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .container {
   margin: 0 auto;
   max-width: 30rem;
@@ -80,6 +88,7 @@ header {
 .icon {
   height: 2rem;
   width: 4rem;
+  /* font-size: 2rem; */
 }
 .content-detail {
   display: flex;
@@ -88,12 +97,22 @@ header {
   margin-top: 1.2rem;
 }
 
+.error-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.error-msg__icon {
+  font-size: 5rem;
+}
 @media screen and (max-width: 566px) {
   .container {
     margin: 0 1.5rem;
     margin-top: 2rem;
   }
   .input-field {
-    max-width:70%;
+    max-width: 70%;
   }
 }

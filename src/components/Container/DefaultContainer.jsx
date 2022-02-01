@@ -3,7 +3,7 @@ import React from 'react';
 function DefaultContainer() {
   return (
       <div className="container">
-        work pending
+        <p className="default-text">TinyWeather will help you to get the best Weather Information </p>
       </div>
   );
 }

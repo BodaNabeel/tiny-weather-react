@@ -44,6 +44,7 @@ header {
   margin-top: 2rem;
   overflow: hidden;
   height: 470px;
+  margin-bottom:4rem ;
 }
 .weather-top {
   display: flex;
@@ -108,10 +109,20 @@ header {
 .error-msg__icon {
   font-size: 5rem;
 }
+.loader-icon {
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 @media screen and (max-width: 566px) {
   .container {
     margin: 0 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .input-field {
     max-width: 70%;

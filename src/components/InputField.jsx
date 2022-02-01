@@ -11,7 +11,7 @@ function InputField({ location, setLocation, setWeather }) {
         .then((data) => setWeather(data))
         // .then((data) => console.log(data))
     }
-  },[location]);
+  },[location,setLocation,setWeather]);
 
 
   const input = useRef();

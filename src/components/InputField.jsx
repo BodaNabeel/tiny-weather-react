@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-
 function InputField({
   location,
   setLocation,
@@ -9,7 +8,7 @@ function InputField({
 }) {
   useEffect(() => {
     if (location !== "") {
-      const API_KEY = `ab00324bf4bc45a786780155223101`;
+      const API_KEY = process.env.REACT_APP_API_KEY;
       const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
 
       fetch(url)

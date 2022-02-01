@@ -4,20 +4,18 @@ import InputField from "./components/InputField";
 import { useState } from "react";
 import DefaultContainer from "./components/Container/DefaultContainer";
 import MainContainer from "./components/Container/MainContainer";
+import SpinnerElement from "./components/hooks/SpinnerElement";
 
 function App() {
   const [location, setLocation] = useState("");
   const [weather, setWeather] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  // const fetchAPI = (location) => {
-  //   const API_KEY = `ab00324bf4bc45a786780155223101`;
-  //   const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
-
-  //   fetch(url)
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // };
-
+  const checkWeather = (weather) => {
+    if(weather) {
+      return <MainContainer weather={weather}/>
+    } return  <DefaultContainer />
+  }
   return (
     <>
       <WebFontLoader />
@@ -26,9 +24,14 @@ function App() {
         setLocation={setLocation}
         location={location}
         // fetchAPI={fetchAPI}
+        setIsLoading = {setIsLoading}
+        isLoading={ isLoading}
+        weather= {weather}
         setWeather={setWeather}
       />
-      {weather ? <MainContainer weather={weather} /> : <DefaultContainer />}
+      {/* {location && isLoading ? "ok" : <DefaultContainer />} */}
+      {location && isLoading ? <SpinnerElement/> : checkWeather(weather)}
+      {/* {weather? <MainContainer weather={weather} />: null} */}
     </>
   );
 }

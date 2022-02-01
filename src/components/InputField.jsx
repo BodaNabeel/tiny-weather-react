@@ -10,7 +10,7 @@ function InputField({
   useEffect(() => {
     if (location !== "") {
       const API_KEY = `ab00324bf4bc45a786780155223101`;
-      const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
+      const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
 
       fetch(url)
         .then((res) => res.json())

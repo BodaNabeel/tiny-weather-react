@@ -36,12 +36,11 @@ header {
   font-weight: 600;
 }
 .container {
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 30rem;
   padding: 1.2rem;
   background-color: #f0f7f4;
   border-radius: 1rem;
-  margin-top: 2rem;
   overflow: hidden;
   height: 470px;
   margin-bottom: 4rem;
@@ -61,7 +60,6 @@ header {
 .weather-icon {
   width: 120px;
   height: 120px;
-  /* margin: 5px auto; */
 }
 .weather-txt {
   text-align: center;
@@ -90,7 +88,6 @@ header {
 .icon {
   height: 2rem;
   width: 4rem;
-  /* font-size: 2rem; */
 }
 .content-detail {
   display: flex;
@@ -120,7 +117,7 @@ header {
 footer {
   box-sizing: border-box;
   background-color: #80c1c0;
-  /* position:absolute; */
+  position: fixed;
   width: 100%;
   bottom: 0;
   padding: 1.5rem;
@@ -128,6 +125,7 @@ footer {
   color: #6c4d42;
   font-size: 1.3rem;
   font-weight: 700;
+  margin-top: 4rem;
 }
 .link {
   text-decoration: none;
@@ -135,9 +133,7 @@ footer {
 }
 @media screen and (max-width: 566px) {
   .container {
-    margin: 0 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 1.5rem 8rem;
   }
   .input-field {
     max-width: 70%;

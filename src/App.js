@@ -28,7 +28,7 @@ function App() {
         // fetchAPI={fetchAPI}
         setWeather={setWeather}
       />
-      {weather?<MainContainer weather={weather}/>: <DefaultContainer/>}
+      {weather ? <MainContainer weather={weather} /> : <DefaultContainer />}
     </>
   );
 }

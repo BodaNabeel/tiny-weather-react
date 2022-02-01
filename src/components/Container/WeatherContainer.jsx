@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {BiWind} from "react-icons/bi"
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { IoWaterOutline } from "react-icons/io5";

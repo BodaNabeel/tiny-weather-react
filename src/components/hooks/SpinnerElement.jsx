@@ -4,7 +4,7 @@ function SpinnerElement() {
   return (
     <div className="container">
       <div className="loader-icon">
-        <DotLoader color="#80c1c0" size="65" loading />
+        <DotLoader color="#80c1c0" size="65px" loading />
       </div>
     </div>
   );

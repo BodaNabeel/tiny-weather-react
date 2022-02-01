@@ -3,6 +3,7 @@ import ErrorContainer from "./ErrorContainer";
 import WeatherContainer from "./WeatherContainer";
 
 function MainContainer({ weather }) {
+  
   return (
     <div className="container">
       {weather.location ? (

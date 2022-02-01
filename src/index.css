@@ -1,6 +1,7 @@
 body {
   background-color: #70abaf;
   font-family: "Source Sans Pro";
+  color: #6c4d42;
 }
 /* header */
 header {
@@ -10,10 +11,67 @@ header {
 }
 .header-text {
   font-size: 2.5rem;
-
-  color: #6c4d42;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 700;
   margin: 0.5rem 0 0 1.5rem;
   font-size: 2rem;
+}
+.container {
+  /* display: flex; */
+  margin: 0 auto;
+  max-width: 30rem;
+  /* height: 80rem; */
+  background-color: #f0f7f4;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.weather-top {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 1.5rem;
+}
+.weather-title {
+  font-size: 2rem;
+}
+.weather-description {
+  font-size: 1.2rem;
+}
+.weather-icon {
+  width: 120px;
+  height: 120px;
+  /* margin: 5px auto; */
+}
+.weather-txt {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.weather-info__title{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0 0 0 2rem;
+}
+.weather-info {
+ display: grid;
+ grid-template-columns: repeat(2,max-content);
+
+ justify-content: center;
+ margin-top: 0 auto;
+ 
+}
+.weather-info__container {
+  display: flex;
+  font-size: 14px;
+  margin:1.2rem
+}
+.icon {
+  width: 80px;
+  height: 80px;
+}
+.content-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  margin-top: 1.2rem;
+  color: black;
 }

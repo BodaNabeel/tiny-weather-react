@@ -9,6 +9,16 @@ header {
   height: 4rem;
   background-color: #80c1c0;
 }
+.input-field {
+  display: flex;
+  outline: none;
+  border: none;
+  width: 30rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  /* height: 2rem; */
+  padding: 0.5rem;
+}
 .header-text {
   font-size: 2.5rem;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -21,7 +31,7 @@ header {
   max-width: 30rem;
   padding: 1.2rem;
   background-color: #f0f7f4;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-top: 2rem;
   overflow: hidden;
   height: 470px;
@@ -76,12 +86,14 @@ header {
   flex-direction: column;
   row-gap: 0.2rem;
   margin-top: 1.2rem;
-  color: black;
 }
 
 @media screen and (max-width: 566px) {
   .container {
     margin: 0 1.5rem;
     margin-top: 2rem;
+  }
+  .input-field {
+    max-width:70%;
   }
 }

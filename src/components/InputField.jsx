@@ -20,6 +20,7 @@ function InputField({ location, setLocation, setWeather }) {
       if (event.keyCode === 13 && input.current.value !== "") {
         setLocation(input.current.value);
         input.current.blur();
+        input.current.value = ""
       }
     });
   });
@@ -30,7 +31,6 @@ function InputField({ location, setLocation, setWeather }) {
       className="input-field"
       type="text"
       maxLength="18"
-      // onChange={(e) => setLocation(e.target.value)}
       placeholder="enter city..."
     ></input>
   );

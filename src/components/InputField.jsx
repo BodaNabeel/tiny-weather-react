@@ -1,6 +1,12 @@
 import React, { useEffect, useRef } from "react";
 
-function InputField({ location, setLocation, setWeather }) {
+function InputField({
+  location,
+  setLocation,
+  setWeather,
+  setIsLoading,
+  weather,
+}) {
   useEffect(() => {
     if (location !== "") {
       const API_KEY = `ab00324bf4bc45a786780155223101`;
@@ -8,11 +14,18 @@ function InputField({ location, setLocation, setWeather }) {
 
       fetch(url)
         .then((res) => res.json())
-        .then((data) => setWeather(data))
-        // .then((data) => console.log(data))
-    }
-  },[location,setLocation,setWeather]);
+        .then((data) => setWeather(data));
 
+      // .then((data) => console.log(data))
+    }
+  }, [location, setLocation, setWeather, setIsLoading]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      return setIsLoading(false);
+    }, 2000)
+    return () => clearTimeout(timer);
+  }, [weather]);
 
   const input = useRef();
   useEffect(() => {
@@ -20,7 +33,8 @@ function InputField({ location, setLocation, setWeather }) {
       if (event.keyCode === 13 && input.current.value !== "") {
         setLocation(input.current.value);
         input.current.blur();
-        input.current.value = ""
+        input.current.value = "";
+        setIsLoading(true);
       }
     });
   });

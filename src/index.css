@@ -17,13 +17,14 @@ header {
   font-size: 2rem;
 }
 .container {
-  /* display: flex; */
   margin: 0 auto;
   max-width: 30rem;
-  /* height: 80rem; */
+  padding: 1.2rem;
   background-color: #f0f7f4;
   border-radius: 2rem;
   margin-top: 2rem;
+  overflow: hidden;
+  height: 470px;
 }
 .weather-top {
   display: flex;
@@ -64,9 +65,9 @@ header {
   font-size: 14px;
   margin: 0.5rem;
 
-  align-items:center;
+  align-items: center;
 }
-.icon{
+.icon {
   height: 2rem;
   width: 4rem;
 }
@@ -76,4 +77,11 @@ header {
   row-gap: 0.2rem;
   margin-top: 1.2rem;
   color: black;
+}
+
+@media screen and (max-width: 566px) {
+  .container {
+    margin: 0 1.5rem;
+    margin-top: 2rem;
+  }
 }

@@ -23,15 +23,13 @@ function App() {
       <InputField
         setLocation={setLocation}
         location={location}
-        // fetchAPI={fetchAPI}
         setIsLoading = {setIsLoading}
         isLoading={ isLoading}
         weather= {weather}
         setWeather={setWeather}
       />
-      {/* {location && isLoading ? "ok" : <DefaultContainer />} */}
       {location && isLoading ? <SpinnerElement/> : checkWeather(weather)}
-      {/* {weather? <MainContainer weather={weather} />: null} */}
+      <footer> made with ❤ by <a target="_blank" rel="noreferrer" className="link" href="https://www.twitter.com">BodaNabeel</a> </footer>
     </>
   );
 }

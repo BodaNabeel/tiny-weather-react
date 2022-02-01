@@ -44,7 +44,7 @@ header {
   margin-top: 2rem;
   overflow: hidden;
   height: 470px;
-  margin-bottom:4rem ;
+  margin-bottom: 4rem;
 }
 .weather-top {
   display: flex;
@@ -116,7 +116,22 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+}
+footer {
+  box-sizing: border-box;
+  background-color: #80c1c0;
+  /* position:absolute; */
+  width: 100%;
+  bottom: 0;
+  padding: 1.5rem;
+  text-align: center;
+  color: #6c4d42;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.link {
+  text-decoration: none;
+  color: #6c4d42;
 }
 @media screen and (max-width: 566px) {
   .container {

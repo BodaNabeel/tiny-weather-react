@@ -1,6 +1,5 @@
 import React from "react";
-import { BounceLoader, ClockLoader, MoonLoader,ClipLoader, DotLoader
-} from "react-spinners";
+import { DotLoader } from "react-spinners";
 function SpinnerElement() {
   return (
     <div className="container">
